@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="sass/custom.scss">
 
     <title>LUCID PSD</title>
   </head>
@@ -86,15 +86,15 @@
         <div class="header">
           <span>Product Overview</span>
           <h3>List of amazing features</h3>
+          <div class="line"></div>
         </div>
       </div>
 
       <!------feature-1---->
       <div class="col-lg-3">
         <div class="feature">
-          <span class="elipse"></span>
-          <img src="images/1.png" alt="monitor">
-          <h4>Responsive</h4>
+          <span class="elipse"><img src="images/1.png" alt="monitor"></span>
+           <h4>Responsive</h4>
           <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
         </div>
       </div>
@@ -103,8 +103,7 @@
       <!------feature-2---->
       <div class="col-lg-3">
         <div class="feature">
-          <span class="elipse"></span>
-          <img src="images/2.png" alt="settings">
+          <span class="elipse"><img src="images/2.png" alt="settings"></span>
           <h4>Responsive</h4>
           <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
         </div>
@@ -114,8 +113,7 @@
       <!------feature-3---->
       <div class="col-lg-3">
         <div class="feature">
-          <span class="elipse"></span>
-          <img src="images/3.png" alt="like">
+          <span class="elipse"><img src="images/3.png" alt="like"></span>
           <h4>Responsive</h4>
           <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
         </div>
@@ -125,8 +123,7 @@
       <!------feature-4---->
       <div class="col-lg-3">
         <div class="feature">
-          <span class="elipse"></span>
-          <img src="images/4.png" alt="phone">
+          <span class="elipse"><img src="images/4.png" alt="phone"></span>
           <h4>Responsive</h4>
           <p>Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
         </div>
@@ -135,6 +132,8 @@
 
     </div>
   </div>
+
+  <hr>
 </section>
 
 <!------features section ends------>
@@ -153,16 +152,19 @@
 
       <div class="col-lg-6">
         <div class="device-text">
-          <span>Dip into the details</span>
-          <h3>Beautiful on every device</h3>
+          <div class="header">
+            <span>Dip into the details</span>
+            <h3>Beautiful on every device</h3>
+            <div class="line"></div>
+          </div>
           <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 
           </p>
 
           <ul class="device-features">
-            <li><img src="images/cup.png" alt="cup">Awesome Design </li>
-            <li><img src="images/mouse.png" alt="mouse">Fully Responsive</li>
-            <li><img src="images/energy.png" alt="energy">Retina Ready</li>
-            <li><img src="images/speedometer.png" alt="speedometer">Tons of features and easy to use</li>
+            <li><div class="feature-img"><img src="images/cup.png" alt="cup"></div>Awesome Design </li>
+            <li><div class="feature-img"><img src="images/mouse.png" alt="mouse"></div>Fully Responsive</li>
+            <li><div class="feature-img"><img src="images/energy.png" alt="energy"></div>Retina Ready</li>
+            <li><div class="feature-img"><img src="images/speedometer.png" alt="speedometer"></div>Tons of features and easy to use</li>
           </ul>
         </div>
       </div>
@@ -247,20 +249,82 @@
         </div>
         <div class="carousel-item">
           <img src="images/carousel-bg.png" class="d-block w-100" alt="carousel-bg">
+          <div class="container">
+              <div class="row">
+
+                <div class="col-12">
+                  <div class="header text-center">
+                    <span>Quality has its price</span>
+                    <h3>Pricing & Plans</h3>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6">
+                  <div class="review">
+                    <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea</p>
+                    <img src="images/man-1.png" alt="man-1">
+                    <ul>
+                      <li>John Doe</li>
+                      <li>Ceo, Rivers Company</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6">
+                  <div class="review">
+                    <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea</p>
+                    <img src="images/man-2.png" alt="man-1">
+                    <ul>
+                      <li>Dean Winchester</li>
+                      <li>Ceo, Rivers Company</li>
+                    </ul>
+                  </div>
+                </div>
+  
+              </div>
+          
+          </div>
         </div>
+
         <div class="carousel-item">
           <img src="images/carousel-bg.png" class="d-block w-100" alt="carousel-bg">
+          <div class="container">
+              <div class="row">
+
+                <div class="col-12">
+                  <div class="header text-center">
+                    <span>Quality has its price</span>
+                    <h3>Pricing & Plans</h3>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6">
+                  <div class="review">
+                    <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea</p>
+                    <img src="images/man-1.png" alt="man-1">
+                    <ul>
+                      <li>John Doe</li>
+                      <li>Ceo, Rivers Company</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6">
+                  <div class="review">
+                    <p>Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt. “When we come to you,” said they to the Sea</p>
+                    <img src="images/man-2.png" alt="man-1">
+                    <ul>
+                      <li>Dean Winchester</li>
+                      <li>Ceo, Rivers Company</li>
+                    </ul>
+                  </div>
+                </div>
+  
+              </div>
+          
+          </div>
         </div>
       </div>
-      
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
 
@@ -405,8 +469,17 @@
 
 <!----------footer-section-starts------>
 <footer>
-  <div class="container">
-    
+  <div class="container text-center">
+    <div class="footer-icons">
+      <a class="nav-item" href="#"><i class="fab fa-behance"></i></a>
+      <a class="nav-item" href="#"><i class="fas fa-basketball-ball"></i></a>
+      <a class="nav-item" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="nav-item" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="nav-item" href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="copyright">
+      <span>copyright &copy; 2014 lucid one page theme</span>
+    </div>    
   </div>
 </footer>
 <!----------footer-section-ends------>

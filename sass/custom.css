@@ -156,6 +156,10 @@ body {
   padding-left: 0 !important;
 }
 
+.review-section .container-fluid .carouser-inner .carousel-item {
+  color: white;
+}
+
 .review-section .container-fluid .carouser-inner .carousel-item img {
   position: relative;
 }
