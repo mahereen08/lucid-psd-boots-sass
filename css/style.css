@@ -286,6 +286,8 @@ body {
 .contact-section {
   background-color: #ededed;
   padding-top: 60px; }
+  .contact-section .header .line::after {
+    background: #ededed !important; }
   .contact-section .contact-det {
     padding: 30px 0; }
     .contact-section .contact-det img {
