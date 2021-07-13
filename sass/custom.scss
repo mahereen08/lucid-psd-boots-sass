@@ -12,13 +12,14 @@ body{
 $ThemeColour: #008ed6;
 
 %PrimaryButton{
+  width: 160px;
+  height: 49px;
   color: white !important;
   background-color: transparent !important;
   border-color: #4d4d52 !important;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 15px 25px !important;
   transition: all 0.3s ease-in-out;
   &:hover{
     background:#008ed6 !important;
@@ -184,11 +185,7 @@ $ThemeColour: #008ed6;
 /**********device-section-starts**********/
 .device-section{
   padding: 100px 0;
-  position: relative;
   .device-text{
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
     .header{
       position: relative;
       height: 100px;
@@ -226,25 +223,89 @@ $ThemeColour: #008ed6;
 }
 /**********device-section-ends**********/
 
-
+/*******customize-section-starts*******/
+.customize-section{
+  background-color:#f2f2f2 ;
+  .container{
+    padding: 30px 0 !important;
+    .customize-section-txt{
+      .header{
+        @extend %HeaderStyle;
+        .line{
+          text-align: left;
+        }
+      }
+    }
+    p{
+      padding: 30px 0;
+    }
+  }
+}
+/*******customize-section-ends*******/
 
 /**********review-section-starts**********/
 .review-section{
+  background-image: url(../images/carousel-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
   .container-fluid{
     padding-right: 0 !important;
     padding-left: 0 !important;
-
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    .header{
+      margin-top: 30px;
+      @extend %HeaderStyle;
+      h3{
+        color: white;
+      }
+    }
+    .carousel-indicators{
+      [data-bs-target]{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: solid 1px white;
+        background-color: transparent;
+      }
+    .active{
+      background-color: white;
+      }  
+    }
     .carousel-inner{
       .carousel-item{
         color: white;
-        img{
-         position: relative;
-        }
+        width: 100%;
+        height: 500px;
+        position: relative;
         .container{
           position: absolute;
           bottom: 50%;
           right: 50%;
           transform: translate(50%, 50%);
+          .review{
+            p{
+              font-size: 18px;
+              line-height: 26px;
+              font-style: italic;
+              color: white;
+              margin-bottom: 30px;
+            }
+            ul{
+              li{
+                margin-right: 20px;
+                p{
+                  font-size: 14px;
+                  margin-bottom: 0;
+                  font-style: normal;
+                }
+              }
+            }
+          }
         }
       }
     }  
@@ -252,7 +313,147 @@ $ThemeColour: #008ed6;
 }
 /**********review-section-ends**********/
 
+/**********get-theme-section-starts**********/
+.get-theme{
+  background-color: #15141a;
+  padding: 50px 0;
+  color: white;
+  h3{
+    font-size: 36px;
+  }
+  button{
+    @extend %PrimaryButton;
+    margin-left: 20px;
+  }
+}
+/**********get-theme-section-ends**********/
 
+/**********pricing-plans-section-starts**********/
+.pricing-plans{
+  padding: 50px 0;
+  .header{
+    @extend %HeaderStyle;
+  }
+  .p-p-content{
+    margin-top: 50px;
+    width: 270px;
+    height: 510px;
+    border: 1px solid #33333345;
+    text-align: center;
+    h4{
+      font-size: 24px;
+      color: #1a1a1a;
+      font-weight: 900;
+      padding: 25px 0;
+    }
+    .price{
+      h2{
+        font-size: 60px;
+        font-weight: 600;
+        color: #1a1a1a;
+        padding-top: 10px;      
+      }
+      span{
+        font-size: 18px;
+        color: #999999;
+        font-weight: 400;
+      }
+      transition: 0.5s linear;
+      &:hover{
+        background-color: $ThemeColour;
+        h2{
+          color: white;
+        }
+        span{
+          color: white;
+        }
+      }
+    }
+    p{
+      color: #999999;
+      line-height: 26px;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 30px 20px;
+    }
+    button{
+      @extend %PrimaryButton;
+      border-color: #99999969 !important;
+      color: $ThemeColour !important;
+      
+      &:hover{
+        color: white !important;
+      }
+    }
+  }
+}
+/**********pricing-plans-section-ends**********/
+
+/**********contact-section-starts**********/
+.contact-section{
+  background-color: #ededed;
+  padding-top: 60px;
+  .header{
+    @extend %HeaderStyle;
+  }
+  .contact-det{
+    padding: 30px 0;
+    img{
+      padding: 40px 0;
+    }
+    p{
+      font-size: 18px;
+      line-height: 26px;
+      color: #999999;
+    }
+  }
+  .form{
+    background-color: #15141a !important;
+    padding: 60px;
+    margin-top: 30px;
+    .form-control{
+      background-color: transparent;
+      border: 1px solid #444348;
+      font-size: 14px;
+      padding: 12px;
+      margin-bottom: 18px;
+    }
+    text-area{
+      padding: 14px;
+    }
+    button{
+      @extend %PrimaryButton;
+      background-color: $ThemeColour !important;
+      &:hover{
+        background-color: transparent !important;
+      }
+    } 
+  }
+}
+/**********contact-section-ends**********/
+
+/*******footer begins*********/
+footer{
+  background-color: #15141a;
+  padding: 30px 0;
+  .footer-icons{
+    i{
+      padding: 0 15px;
+      color: #444348;
+      transition: all 0.3s ease-out ;
+      &:hover{
+        color: $ThemeColour;
+      }
+    }
+  }
+  .copyright{
+    padding-top: 15px;
+    color: #444348;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+/*******footer ends*********/
 
 
 

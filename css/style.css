@@ -9,37 +9,38 @@ p {
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
-.top-header .banner-txt-img .bnr-txt .btn-primary {
+.top-header .banner-txt-img .bnr-txt .btn-primary, .get-theme button, .pricing-plans .p-p-content button, .contact-section .form button {
+  width: 160px;
+  height: 49px;
   color: white !important;
   background-color: transparent !important;
   border-color: #4d4d52 !important;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 15px 25px !important;
   transition: all 0.3s ease-in-out; }
-  .top-header .banner-txt-img .bnr-txt .btn-primary:hover {
+  .top-header .banner-txt-img .bnr-txt .btn-primary:hover, .get-theme button:hover, .pricing-plans .p-p-content button:hover, .contact-section .form button:hover {
     background: #008ed6 !important; }
 
-.features-section .header span, .device-section .device-text .header span {
+.features-section .header span, .device-section .device-text .header span, .customize-section .container .customize-section-txt .header span, .review-section .container-fluid .header span, .pricing-plans .header span, .contact-section .header span {
   color: #008ed6;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 14px; }
-.features-section .header h3, .device-section .device-text .header h3 {
+.features-section .header h3, .device-section .device-text .header h3, .customize-section .container .customize-section-txt .header h3, .review-section .container-fluid .header h3, .pricing-plans .header h3, .contact-section .header h3 {
   font-size: 36px;
   font-weight: 600;
   color: black;
   font-size: 36px;
   margin: 15px 0; }
-.features-section .header .line, .device-section .device-text .header .line {
+.features-section .header .line, .device-section .device-text .header .line, .customize-section .container .customize-section-txt .header .line, .review-section .container-fluid .header .line, .pricing-plans .header .line, .contact-section .header .line {
   width: 55px;
   height: 3px;
   background: #008ed6;
   text-align: center;
   display: inline-block;
   position: relative; }
-  .features-section .header .line::after, .device-section .device-text .header .line::after {
+  .features-section .header .line::after, .device-section .device-text .header .line::after, .customize-section .container .customize-section-txt .header .line::after, .review-section .container-fluid .header .line::after, .pricing-plans .header .line::after, .contact-section .header .line::after {
     content: '';
     background: white;
     width: 8px;
@@ -138,52 +139,195 @@ body {
 /*******feature-section-ends******/
 /**********device-section-starts**********/
 .device-section {
-  padding: 100px 0;
-  position: relative; }
-  .device-section .device-text {
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%); }
-    .device-section .device-text .header {
-      position: relative;
-      height: 100px; }
-      .device-section .device-text .header .line {
-        text-align: left; }
-    .device-section .device-text p {
-      color: #999999;
+  padding: 100px 0; }
+  .device-section .device-text .header {
+    position: relative;
+    height: 100px; }
+    .device-section .device-text .header .line {
+      text-align: left; }
+  .device-section .device-text p {
+    color: #999999;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 30px 0; }
+  .device-section .device-text ul {
+    padding-left: 0px !important; }
+    .device-section .device-text ul li {
+      list-style: none;
+      color: #1b1b1b;
       font-size: 18px;
-      line-height: 26px;
-      padding: 30px 0; }
-    .device-section .device-text ul {
-      padding-left: 0px !important; }
-      .device-section .device-text ul li {
-        list-style: none;
-        color: #1b1b1b;
-        font-size: 18px;
-        font-weight: 400; }
-        .device-section .device-text ul li .feature-img {
-          width: 35px;
-          height: 35px;
-          display: inline-block;
-          text-align: center; }
-        .device-section .device-text ul li img {
-          padding-right: 20px; }
+      font-weight: 400; }
+      .device-section .device-text ul li .feature-img {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        text-align: center; }
+      .device-section .device-text ul li img {
+        padding-right: 20px; }
 
 /**********device-section-ends**********/
+/*******customize-section-starts*******/
+.customize-section {
+  background-color: #f2f2f2; }
+  .customize-section .container {
+    padding: 30px 0 !important; }
+    .customize-section .container .customize-section-txt .header .line {
+      text-align: left; }
+    .customize-section .container p {
+      padding: 30px 0; }
+
+/*******customize-section-ends*******/
 /**********review-section-starts**********/
-.review-section .container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important; }
-  .review-section .container-fluid .carousel-inner .carousel-item {
-    color: white; }
-    .review-section .container-fluid .carousel-inner .carousel-item img {
+.review-section {
+  background-image: url(../images/carousel-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative; }
+  .review-section .container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%); }
+    .review-section .container-fluid .header {
+      margin-top: 30px; }
+      .review-section .container-fluid .header h3 {
+        color: white; }
+    .review-section .container-fluid .carousel-indicators [data-bs-target] {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: solid 1px white;
+      background-color: transparent; }
+    .review-section .container-fluid .carousel-indicators .active {
+      background-color: white; }
+    .review-section .container-fluid .carousel-inner .carousel-item {
+      color: white;
+      width: 100%;
+      height: 500px;
       position: relative; }
-    .review-section .container-fluid .carousel-inner .carousel-item .container {
-      position: absolute;
-      bottom: 50%;
-      right: 50%;
-      transform: translate(50%, 50%); }
+      .review-section .container-fluid .carousel-inner .carousel-item .container {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%); }
+        .review-section .container-fluid .carousel-inner .carousel-item .container .review p {
+          font-size: 18px;
+          line-height: 26px;
+          font-style: italic;
+          color: white;
+          margin-bottom: 30px; }
+        .review-section .container-fluid .carousel-inner .carousel-item .container .review ul li {
+          margin-right: 20px; }
+          .review-section .container-fluid .carousel-inner .carousel-item .container .review ul li p {
+            font-size: 14px;
+            margin-bottom: 0;
+            font-style: normal; }
 
 /**********review-section-ends**********/
+/**********get-theme-section-starts**********/
+.get-theme {
+  background-color: #15141a;
+  padding: 50px 0;
+  color: white; }
+  .get-theme h3 {
+    font-size: 36px; }
+  .get-theme button {
+    margin-left: 20px; }
+
+/**********get-theme-section-ends**********/
+/**********pricing-plans-section-starts**********/
+.pricing-plans {
+  padding: 50px 0; }
+  .pricing-plans .p-p-content {
+    margin-top: 50px;
+    width: 270px;
+    height: 510px;
+    border: 1px solid #33333345;
+    text-align: center; }
+    .pricing-plans .p-p-content h4 {
+      font-size: 24px;
+      color: #1a1a1a;
+      font-weight: 900;
+      padding: 25px 0; }
+    .pricing-plans .p-p-content .price {
+      transition: 0.5s linear; }
+      .pricing-plans .p-p-content .price h2 {
+        font-size: 60px;
+        font-weight: 600;
+        color: #1a1a1a;
+        padding-top: 10px; }
+      .pricing-plans .p-p-content .price span {
+        font-size: 18px;
+        color: #999999;
+        font-weight: 400; }
+      .pricing-plans .p-p-content .price:hover {
+        background-color: #008ed6; }
+        .pricing-plans .p-p-content .price:hover h2 {
+          color: white; }
+        .pricing-plans .p-p-content .price:hover span {
+          color: white; }
+    .pricing-plans .p-p-content p {
+      color: #999999;
+      line-height: 26px;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 30px 20px; }
+    .pricing-plans .p-p-content button {
+      border-color: #99999969 !important;
+      color: #008ed6 !important; }
+      .pricing-plans .p-p-content button:hover {
+        color: white !important; }
+
+/**********pricing-plans-section-ends**********/
+/**********contact-section-starts**********/
+.contact-section {
+  background-color: #ededed;
+  padding-top: 60px; }
+  .contact-section .contact-det {
+    padding: 30px 0; }
+    .contact-section .contact-det img {
+      padding: 40px 0; }
+    .contact-section .contact-det p {
+      font-size: 18px;
+      line-height: 26px;
+      color: #999999; }
+  .contact-section .form {
+    background-color: #15141a !important;
+    padding: 60px;
+    margin-top: 30px; }
+    .contact-section .form .form-control {
+      background-color: transparent;
+      border: 1px solid #444348;
+      font-size: 14px;
+      padding: 12px;
+      margin-bottom: 18px; }
+    .contact-section .form text-area {
+      padding: 14px; }
+    .contact-section .form button {
+      background-color: #008ed6 !important; }
+      .contact-section .form button:hover {
+        background-color: transparent !important; }
+
+/**********contact-section-ends**********/
+/*******footer begins*********/
+footer {
+  background-color: #15141a;
+  padding: 30px 0; }
+  footer .footer-icons i {
+    padding: 0 15px;
+    color: #444348;
+    transition: all 0.3s ease-out; }
+    footer .footer-icons i:hover {
+      color: #008ed6; }
+  footer .copyright {
+    padding-top: 15px;
+    color: #444348;
+    text-transform: uppercase;
+    font-size: 14px; }
+
+/*******footer ends*********/
 
 /*# sourceMappingURL=style.css.map */
