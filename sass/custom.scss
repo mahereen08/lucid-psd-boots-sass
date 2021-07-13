@@ -397,7 +397,7 @@ $ThemeColour: #008ed6;
     @extend %HeaderStyle;
     .line{
       &::after{
-        background: red !important;
+        background: #ededed !important;
       }
     }
   }
